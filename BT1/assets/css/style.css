@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins' !important;
+    scroll-behavior: smooth;
+}
+:root{
+    --l-nav-width: 85%;
+    --l-color: #ffb507;
+    --l-opacity: 0.8;
+    --l-content-width: 72%;
+    --ser-item-width: 22%;
+    --modern-item-width: 32%;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-opa{
+    opacity: var(--l-opacity);
+    font-size: 0.95em;
+}
+.bg-black-opa{
+    background-color: rgba(55, 54, 54, 0.95);
+}
+.no-border{
+    border: none;
+}
+.border-circle{
+    border-radius: 50%;
+}
+.bg-main-opa{
+    background-color: rgba(255, 181, 7, var(--l-opacity));
+}
+.bg-main{
+    background-color: var(--l-color);
+}
+.opacity{
+    opacity: var(--l-opacity);
+}
+.margin-center{
+    margin: 0 auto;
+}
+.bg-black{
+    background-color: black;
+}
+.hover-black:hover{
+    background-color: black !important;
+    color: white !important;
+}
+.text-no-decor{
+    text-decoration: none;
+}
+.no-background{
+    background: none;
+}
+.relative{
+    position: relative;
+}
+.text-center{
+    text-align: center;
+}
+.width-48{
+    width: 48%;
+}
+.font-bold{
+    font-weight: bold !important;
+}
+.list-none{
+    list-style: none;
+}
+.uppercase{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.full-width{
+    width: 100% !important;
+}
+.translateY-middle{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.block{
+    display: block !important;
+}
+.translateX-center{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.color-white{
+    color: white !important;
+}
+.pos-absolute{
+    position: absolute;
+}
+.no-pd-top{
+    padding-top: 0 !important;
+}
+#header{
+    top: 0;
+    z-index: 2;
+}
+.nav-text{
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 40px !important;
+    font-weight: 650;
+    display: block;
+}
+#nav{
+    width: var(--l-nav-width);
+    padding: 1.75em 0;
+}
+.nav-section{
+    list-style: none;
+}
+#nav .icon-head{
+    width: 60px;
+    height: 40px;
+}
+#nav .logan-head{
+    font-weight: 800 !important;
+    font-size: 1.5em !important;
+}
+#nav .contact-phone{
+    color: var(--l-color) !important;
+    font-weight: normal;
+}
+.nav-hover:hover{
+    border: solid 4px var(--l-color);
+    border-top: solid 1px var(--l-color);
+    border-radius: 1em;
+    box-shadow: 0 .25em .25em 0 var(--l-color);
+    background-color: rgba(255,255,255,0.5);
+}
+#slider{
+    background: url("../img/background.jpg") top center / 100% 100% no-repeat;
+    padding-top: 60%;
+}
+#slider .slider-content{
+    top: 18%;
+    width: 50%;
+    left: 25%;
+    right: 0;
+}
+#slider .slider-logan{
+    font-size: 90px;
+}
+#slider .contact-btn{
+    border-radius: 0.25em;
+    font-size: 17px;
+    padding: 13px 36px;
+    bottom: 3%;
+    border: solid 2px var(--l-color);
+}
+#slider .contact-btn:hover, #content .send-btn{
+    border: white solid 2px;
+    background: none;
+}
+#slider .arrow-left, #slider .arrow-right{
+    background-color: #242424;
+    height: 80px;
+    width: 40px;
+}
+#slider .arrow-left{
+    border-radius: 0 40px 40px 0;
+}
+#slider .arrow-right{
+    border-radius: 40px 0 0 40px;
+}
+#slider .arrow-left .pos-absolute{
+    padding-left: 8px;
+}
+#slider .arrow-right .pos-absolute{
+    padding-left: 16px;
+}
+#slider .arrow-left:hover, #slider .arrow-right:hover{
+    background-color: var(--l-color);
+    opacity: var(--l-opacity);
+}
+#content .content-section{
+    width: var(--l-content-width) !important;
+    padding: 4em 0;
+}
+#content .topic-item{
+    width: var(--ser-item-width);
+    margin: 2em 0;
+}
+#content .topic-img{
+    width: 40%;
+    margin: 1em auto;
+}
+#content .topic-desc{
+    padding: 1em 0;
+}
+#content .read-btn{
+    padding: 0.75em;
+    border-radius: 0.5em;
+    width: 45%; 
+    font-size: 0.75em;
+}
+#content .background-ful{
+    text-align: left !important;
+}
+#content .content-head{
+    font-size: 2.2em;
+}
+#content .content-logan{
+    line-height: 2;
+}
+#content .content-part-2 .content-logan{
+    padding: 2.5em 0;
+}
+#content .read-btn-2 a{
+    margin: 1em 0;
+    border-radius: 0.5em;
+    padding: 0.75em 0;
+    width: 35%;
+}
+#content .read-btn-2:hover> a{
+    background: #ccc !important;
+    color: black !important;
+}
+#content .furni-items{
+    margin-top: 2.5em;
+    text-align: left;
+}
+#content .furni-head{
+    padding: 1.5em 0;
+    color: var(--l-color);
+}
+#content .furni-desc, #content .content-desc{
+    font-size: 0.83em;
+    line-height: 1.8;
+}
+#content .furni-sear-btn{
+    top: 40%;
+}
+#content .search-furni-ico{
+    padding: 1em;
+}
+#content .content-desc{
+    padding: 2em 0;
+}
+#content .bg-who-are{
+    background: url("../img/bigkitchen.png") center / cover repeat;
+}
+#content .get-quote-btn{
+    width: 15%;
+    padding-top: 1em;
+}
+#content .get-quote-btn a{
+    padding: 0.75em 0;
+    color: black;
+    background-color: white;
+    border-radius: 0.5em;
+    text-decoration: none;
+}
+#content .modern-items{
+    margin: 2.5em 0 1.5em;
+}
+#content .modern-item{
+    width: var(--modern-item-width);
+    padding-top: var(--modern-item-width);
+}
+#content .modern-logan{
+    bottom: 2.5em;
+}
+#content .view-more-modern{
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 1em;
+}
+#content .view-more-btn{
+    padding: 1.2em 3.2em;
+    width: 50%;
+    top: 35%;
+    font-size: 0.7em;
+    border: 1px solid #fff;
+}
+#content .view-more-btn:hover, #content .send-btn:hover{
+    background-color: white;
+    color: black !important;
+}
+#content #modern-1{
+    background: url("../img/kitchen.png") top center / cover no-repeat;
+}
+#content #modern-2{
+    background: url("../img/hall.png") top center / cover no-repeat;
+}
+#content #modern-3{
+    background: url("../img/staircase.png") top center / cover no-repeat;
+}
+#content .change-modern{
+    top: 55%;
+    left: 4%;
+    width: 92%;
+}
+#content .change-left, #content .change-right{  
+    width: 2.6em;
+}
+#content .change-modern .fa-solid{
+    line-height: 2.6em;
+}
+#content .change-left:hover .fa-solid, #content .change-right:hover .fa-solid{
+    background-color: var(--l-color);
+}
+#content .product-feedback{
+    padding-top: 4em;
+}
+#content .customer{
+    width: 56%;
+    border: black solid 1px;
+    padding: 0.6em;
+}
+#content .cus-info{
+    width: 75%;
+}
+#content .cus-name{
+    font-size: 1em;
+    line-height: 1em;
+}
+#content .feed-back{
+    padding-top: 0.3em;
+    font-size: 0.9em;
+}
+#content .cus-pic{
+    width: 23%; 
+}
+#content .fa-quote-left{
+    color: #e6b644;
+    bottom: 14%;
+    font-size: 1.2em;
+}
+#content .more-cus{
+    padding: 1em 0;
+}
+#content .more-cus-list input[type = radio]{
+    display: none;
+}
+#content .more-cus-list input[type = radio] + label{
+    border: 0;
+    height: 2em;
+    width: 2em;
+    margin: 0.5em;
+    margin-top: 45%;
+}
+#content .more-cus-list input[type=radio]:checked + label{
+    background-color: black;
+}
+#content .more-cus-list input:first-child{
+    margin-left: 0;
+}
+#content .big-bg{
+    background: url("../img/bigkitchen.png") top / cover no-repeat;
+}
+#content .contact-items{
+    margin-top: 2em;
+}
+#content .contact-item{
+    width: 49%;
+    flex-wrap: wrap;
+}
+#content .contact-item >input{
+    padding: 1em;
+    outline: none;
+    color: #989696;
+    margin-bottom: 2em;
+    font-family: 'Poppins';
+}
+#content .contact-item .message{
+    padding: 3em 1em !important;
+    margin-bottom: 0;
+}
+#content .send-btn{
+    margin-top: 1em;
+    padding: 0.5em 1.5em;
+    width: 25%;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+#content .total-item{
+    width: 20%;
+}
+#content .total-head{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+#content .subcribe-mail{
+    margin:0 0 1em 0;
+}
+#content .subcribe-tag{
+    line-height: 1.75em;
+    right: 0;
+}
+#content .mail-textbox{
+    width: 46%;
+    margin-left: 54%;
+    outline: none;
+    padding: 0.75em;
+    border-bottom: solid white 1px;
+}
+#footer{
+    width: var(--l-nav-width);
+    padding: 1.5em 0;
+    color:#040000;
+}
+#footer .another-page{
+    width: 12%;
+    margin-bottom: 0.75em;
+}
+#footer .fanpage{
+    width: 23%; 
+}
